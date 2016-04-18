@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>扫雷游戏</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="quote.js"></script>
+    <script type="text/javascript" src="show.js"></script>
+    <link type="text/css" rel="stylesheet"  href="css.css">
+</head>
+<body>
+
+<div id="content">
+      <div id="top">
+          <div id="select">
+              <a href="#" onclick="show_initPage(9,9,10)">初级</a>
+              <a href="#" onclick="show_initPage(16,16,40)">中级</a>
+              <a href="#" onclick="show_initPage(16,30,99)" onmousedown="">高级</a>
+          </div>
+          <div id="time">时间：<span></span></div>
+          <div id="number">剩余雷数：<span></span></div>
+      </div>
+      <div id="main">
+          <div id="fail_img">  </div>
+      </div>
+     <div id="footer"></div>
+</div>
+<div id="fail">
+    <div class="select">
+        <p class="title">游戏失败</p>
+        <div class="bg">
+        <p class="s_title">不好意思，您输了。</p>
+         <p class="time">时间：<span></span>秒</p>
+        <p class="a"><a href="#" onclick="regame(1)">重新开始此局</a>
+        <a href="#" onclick="regame(2)">再玩一次</a> </p>
+            </div>
+    </div>
+</div>
+<div id="success">
+    <div class="select">
+        <p class="title">游戏胜利</p>
+        <div class="bg">
+        <p class="s_title">恭喜，您赢了！</p>
+        <p class="time">时间：<span></span>秒</p>
+        <p class="a"><a href="#" onclick="regame(2)">再玩一次</a> </p>
+            </div>
+     </div>
+</div>
+
+
+</body>
+</html>

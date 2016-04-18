@@ -1,0 +1,97 @@
+#content{
+    position: relative;
+    width:1000px;
+    height:600px;
+    margin:100px auto;
+}
+#select,#time,#number{
+    text-align: center;
+    width:400px;
+    margin:10px auto;
+}
+#main{
+    position: relative;
+    text-align: center;
+    margin:10px auto;
+}
+#main .cell{
+    position:absolute;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    border:1px solid black;
+    border-radius: 2px;
+}
+#fail,#success{
+    position: fixed;
+    top:0px;
+    display: none;
+    z-index: 2;
+}
+#remind{
+    position:absolute;
+}
+#fail_img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-image: url(img/fail.gif);
+    margin: 0 auto;
+    display: none;
+    z-index: 1;
+}
+.lei{
+    background-image: url(img/lei.png);
+    background-size: 100%;
+    background-color: red;
+}
+.flag{
+    background-image: url(img/flag.png);
+    background-size: 100%;
+}
+.wenhao{
+    background-image: url(img/wenhao.png);
+    background-size: 100%;
+}
+.select{
+    border: 1px solid #5F5C5C;
+    width: 360px;
+    height: 260px;
+    margin: 0 auto;
+
+    background-color: rgba(185, 210, 241, 0.6);
+    font-size: 14px;
+    font-family: "微软雅黑";
+    border-radius: 7px;
+}
+.title{
+    text-align: center;
+    line-height: 2px;
+}
+.s_title{
+    text-align: center;
+}
+.time{
+    margin-left: 20px;
+}
+.bg{
+    width: 350px;
+    height: 222px;
+    margin-left: 5px;
+    background-color: #F1F0F0;
+    border: 1px solid #807D7D;
+}
+.a{
+    text-align: center;
+    margin-top: 90px;
+}
+.a a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    padding: 3px 9px;
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#d7d7d7),color-stop(1,#efeef4));
+}
+
+
